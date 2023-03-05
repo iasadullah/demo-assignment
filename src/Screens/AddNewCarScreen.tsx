@@ -69,7 +69,7 @@ const AddNewCarScreen = (props: any) => {
     onSelectCategory(!selectCategory);
   };
   const onSelectCompany = (val: string, id: number) => {
-    console.warn('values::', val, id);
+    // console.warn('values::', val, id);
     userContext.updateCompanyname(val);
     userContext.updateCompanyId(id);
     onSelectCategory(false);
@@ -94,10 +94,10 @@ const AddNewCarScreen = (props: any) => {
         registrationNumber.length === 8 &&
         registrationError.length === 0
       ) {
-        console.warn('all checks satisfied');
+        // console.warn('all checks satisfied');
         AsyncStorage.getItem('crudData').then(data => {
           if (data !== null) {
-            console.warn('not null');
+            // console.warn('not null');
             let tempData = [];
             tempData = JSON.parse(data);
 
@@ -110,11 +110,11 @@ const AddNewCarScreen = (props: any) => {
             };
             tempData.push(userData);
             userContext.updateApplicationList(tempData);
-            console.warn('tempData ::', tempData);
+            // console.warn('tempData ::', tempData);
             AsyncStorage.setItem('crudData', JSON.stringify(tempData));
             props.navigation.navigate('ViewApplication');
           } else {
-            console.warn('null');
+            // console.warn('null');
             let userData = {
               id: userContext.companyId,
               make: carName,

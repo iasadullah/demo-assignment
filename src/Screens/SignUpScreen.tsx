@@ -15,7 +15,7 @@ const SignUpScreen = (props: any) => {
     setShowPassword(!showPassword);
   };
   useEffect(() => {
-    console.warn('signup');
+    // console.warn('signup');
     checkUser();
   }, []);
   const checkUser = async () => {
@@ -81,12 +81,12 @@ const SignUpScreen = (props: any) => {
       ToastAndroid.show('Please enter name', ToastAndroid.SHORT);
     } else if (strength.length > 0) {
       setValidationError(strength);
-      console.warn(strength);
+      // console.warn(strength);
     } else if (userPassword) {
       setValidationError('');
       registerUser();
     }
-    console.warn('this is someting', strength);
+    // console.warn('this is someting', strength);
   };
   const registerUser = async () => {
     try {
@@ -94,7 +94,7 @@ const SignUpScreen = (props: any) => {
       // await AsyncStorage.setItem('userPassword', userPassword);
       const userData = [{userName: userName}, {userPassword: userPassword}];
       await AsyncStorage.setItem('userData', JSON.stringify(userData));
-      console.warn(userData);
+      // console.warn(userData);
       userContext.updateIsWalkthrough(false);
       userContext.updateIsLogin(true);
     } catch (error) {

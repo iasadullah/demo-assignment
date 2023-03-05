@@ -8,7 +8,7 @@ const ViewApplicationScreen = (props: any) => {
   const userContext = useContext(UserContext);
   const [applicationList, setApplicationList] = useState([]);
   useEffect(() => {
-    console.warn(userContext.applicationList.length);
+    // console.warn(userContext.applicationList.length);
     getData();
     const backHandler = BackHandler.addEventListener(
       'hardwareBackPress',

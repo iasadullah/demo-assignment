@@ -86,7 +86,7 @@ const LoginScreen = (props: any) => {
       ToastAndroid.show('Please enter name', ToastAndroid.SHORT);
     } else if (strength.length > 0) {
       setValidationError(strength);
-      console.warn(strength);
+      // console.warn(strength);
     } else if (userPassword) {
       setValidationError('');
       if (from.toLowerCase() === 'login') {
@@ -98,7 +98,7 @@ const LoginScreen = (props: any) => {
   const loginUser = async () => {
     try {
       if (localPassword.includes(userPassword)) {
-        console.warn('true');
+        // console.warn('true');
         if (localUserName.includes(userName)) {
           userContext.updateIsWalkthrough(false);
           userContext.updateIsLogin(false);
@@ -119,7 +119,7 @@ const LoginScreen = (props: any) => {
       // await AsyncStorage.setItem('userPassword', userPassword);
       const userData = [{userName: userName}, {userPassword: userPassword}];
       await AsyncStorage.setItem('userData', JSON.stringify(userData));
-      console.warn(userData);
+      // console.warn(userData);
       props.navigation.navigate('Home');
     } catch (error) {
       console.log('register User Error::', error);

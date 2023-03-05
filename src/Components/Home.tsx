@@ -76,13 +76,7 @@ const Home: FC<home> = props => {
                 </Text>
               </View>
             </View>
-            <View style={{}}>
-              <TouchableOpacity
-                style={styles.viewApplicationContainer}
-                onPress={props.onViewApplicationPressed}>
-                <Text style={styles.headerText}>View Application</Text>
-              </TouchableOpacity>
-            </View>
+
             <View style={styles.carCatContaine}>
               <TouchableOpacity
                 onPress={props.onCategoryPressed}
@@ -94,7 +88,13 @@ const Home: FC<home> = props => {
               </TouchableOpacity>
             </View>
           </View>
-
+          <View style={{alignSelf: 'center', marginTop: 10}}>
+            <TouchableOpacity
+              style={styles.viewApplicationContainer}
+              onPress={props.onViewApplicationPressed}>
+              <Text style={styles.headerText}>View Application</Text>
+            </TouchableOpacity>
+          </View>
           <View style={{flex: 1}}>
             <View style={styles.youCarContainer}>
               <Text style={styles.headingText}>Your Registered Vehicles</Text>
