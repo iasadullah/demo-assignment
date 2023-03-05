@@ -1,0 +1,94 @@
+{
+  "userData": {
+    "owner": {
+      "phone": "555-1234",
+      "email": "johndoe@example.com"
+    },
+    "registeredCars": [
+      {
+        "id": 1,
+        "make": "Toyota",
+        "model": "Camry",
+        "color": "blue",
+        "registration_no": "ABC123"
+      },
+      {
+        "id": 2,
+        "make": "Honda",
+        "model": "Accord",
+        "color": "red",
+        "registration_no": "DEF456"
+      },
+      {
+        "id": 3,
+        "make": "Hyundai",
+        "model": "Camry",
+        "color": "blue",
+        "registration_no": "ABC123"
+      },
+      {
+        "id": 4,
+        "make": "Tesla",
+        "model": "Accord",
+        "color": "red",
+        "registration_no": "DEF456"
+      },
+      {
+        "id": 5,
+        "make": "Lamborgini",
+        "model": "Camry",
+        "color": "blue",
+        "registration_no": "ABC123"
+      },
+      {
+        "id": 6,
+        "make": "Royal Enfield",
+        "model": "Accord",
+        "color": "red",
+        "registration_no": "DEF456"
+      },
+      {
+        "id": 8,
+        "make": "United",
+        "model": "Camry",
+        "color": "blue",
+        "registration_no": "ABC123"
+      },
+      {
+        "id": 9,
+        "make": "Supera",
+        "model": "Accord",
+        "color": "red",
+        "registration_no": "DEF456"
+      },
+      {
+        "id": 10,
+        "make": "Mazda",
+        "model": "Camry",
+        "color": "blue",
+        "registration_no": "ABC123"
+      },
+      {
+        "id": 11,
+        "make": "Kia",
+        "model": "Accord",
+        "color": "red",
+        "registration_no": "DEF456"
+      },
+      {
+        "id": 12,
+        "make": "Ferrari",
+        "model": "Camry",
+        "color": "blue",
+        "registration_no": "ABC123"
+      },
+      {
+        "id": 13,
+        "make": "Tata",
+        "model": "Accord",
+        "color": "red",
+        "registration_no": "DEF456"
+      }
+    ]
+  }
+}
