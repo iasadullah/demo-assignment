@@ -85,8 +85,9 @@ const SignUpScreen = (props: any) => {
     } else if (userPassword) {
       setValidationError('');
       registerUser();
+    } else if (userPassword.length === 0) {
+      ToastAndroid.show('Please enter password', ToastAndroid.SHORT);
     }
-    // console.warn('this is someting', strength);
   };
   const registerUser = async () => {
     try {

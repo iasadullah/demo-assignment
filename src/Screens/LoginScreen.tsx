@@ -92,6 +92,8 @@ const LoginScreen = (props: any) => {
       if (from.toLowerCase() === 'login') {
         loginUser();
       }
+    } else if (userPassword.length === 0) {
+      ToastAndroid.show('Please enter password', ToastAndroid.SHORT);
     }
     // console.warn('this is someting', strength);
   };
